@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="libs/jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css" />
+		<script src="libs/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="libs/databaseER.css" />
+		<script src="libs/databaseER.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div id="demo">
+
+			</div>
+		</div>
+		<div class="check">
+			<input type="button" class="btn btn-info" value="查看数据" data-toggle="modal" data-target="#checkData"/>
+		</div>
+		
+		<div class="modal fade iovModal" id="create">
+			<div class="drag">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">新建</h4>
+					</div>
+					<div class="modal-body">
+						<form name="addForm">
+							<div class="modal-input">
+								<div class="modal-column">
+									<span class="nametip">类型</span>
+									<div class="form-group">
+										<select class="iovoption" name="type" pattern="/^((?!请选择类型).)*$/">
+											<option disabled value="请选择类型">请选择类型</option>
+											<option value="mysql">mysql</option>
+											<option value="ES">ES</option>
+										</select>
+									</div>
+									<span class="nametip">英文表名</span>
+									<div class="form-group has-success">
+										<input type="text" class="form-control" name="nameEn" placeholder="英文表名" pattern="^[a-zA-Z0-9_]*$" required/>
+									</div>
+									<span class="nametip">中文表名</span>
+									<div class="form-group has-success">
+										<input type="text" class="form-control" name="nameCn" placeholder="中文表名" pattern="^[\u4E00-\u9FA5]*$" required />
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="modal-submit">
+								<button type="button" class="btn iovFormButton confirm">确定</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="modal fade iovModal" id="import">
+			<div class="drag">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">导入</h4>
+					</div>
+					<div class="modal-body">
+						<form name="addForm">
+							<div class="modal-input">
+								<div class="modal-column">
+								</div>	
+							</div>
+							<div class="modal-submit">
+								<button type="button" class="btn iovFormButton confirm">确定</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal iovModal fixed" id="relevance">
+			<div class="drag">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">表关联</h4>
+					</div>
+					<div class="modal-body">
+						<div class="tableContent from">
+							<div class="tableMain">
+								<div class="tableHead">
+								</div>
+								<div class="tableBody">
+									<ul>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="tableContent to">
+							<div class="tableMain">
+								<div class="tableHead">
+								</div>
+								<div class="tableBody">
+									<ul>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="modal-submit">
+							<button type="button" class="btn iovFormButton confirm">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!------------------属性编辑------------------------------->
+		<div class="modal iovModal property fixed" id="property">
+			<div class="drag">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">属性编辑</h4>
+					</div>
+					<div class="modal-body">
+						<form name="property">
+							<div class="contentMain">
+								<div class="contentTool">
+									<ul class="iovButtonGroup">
+										<div>
+											<label>中文表名:</label><input type="text" class="form-control" name="tableNameCn" />
+										</div>
+										<div>
+											<label>英文表名:</label><input type="text" class="form-control" name="tableName" />
+										</div>
+										<li>
+											<span class="addField">添加字段</span>
+										</li>
+									</ul>
+								</div>
+								<div class="contentTable">
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>序号</th>
+													<th>英文名称</th>
+													<th>中文名称</th>
+													<th>数据类型</th>
+													<th>长度</th>
+													<th>主键</th>
+													<th>允许null</th>
+													<th>默认值</th>
+													<th>删除</th>
+												</tr>
+											</thead>
+											<tbody>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="modal-submit">
+								<button type="button" class="iovFormButton confirm btn">确定</button>
+								<div class="clearfix">
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="modal fade iovModal fixed" id="checkData">
+			<div class="drag">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">查看数据</h4>
+					</div>
+					<div class="modal-body">
+						<textarea></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	
+	
+	</body>
+
+</html>

@@ -1,0 +1,700 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #414a59;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+label {
+	font: 400 14px "microsoft yahei";
+	font-weight: 400
+}
+
+td,
+th,
+caption {
+	font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+	font: 14px Verdana, Helvetica, Arial, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+
+td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+html {
+	overflow: hidden;
+}
+
+.iovModal .modal-content {
+	border-radius: 9px;
+}
+
+.iovModal .modal-header {
+	padding: 9px 15px;
+	font-size: 16px;
+	border-radius: 6px 6px 0 0;
+}
+
+.iovModal .modal-header button.close {
+	color: #FFF;
+	font-weight: 400;
+	opacity: 1;
+}
+
+.iovModal .modal-header button.close:hover {
+	opacity: 0.5;
+}
+
+.iovModal .modal-body {
+	padding: 0
+}
+
+.iovModal .modal-input {
+	width: 100%;
+	background-color: #F5F7F7;
+	padding: 20px 15px;
+}
+
+.iovModal .modal-input .modal-column {
+	width: 100%;
+	padding: 0 35px;
+	float: left;
+}
+
+.iovModal .modal-input .modal-column .form-group {
+	margin: 10px 0 20px 0;
+}
+
+.form-control {
+	border: 1.5px #C9C9C9 solid;
+	border-radius: inherit;
+}
+
+.iovModal .modal-submit {
+	width: 100%;
+	height: 70px;
+	text-align: right;
+	padding: 18px 55px;
+}
+
+.iovModal .modal-submit button {
+	margin-left: 15px;
+}
+
+.iovModal .drag {
+	position: absolute;
+	top: 100px;
+	left: 40%;
+	left: calc(50% - 200px);
+	width: 400px;
+}
+
+.iovModal.big .drag {
+	left: calc(50% - 300px);
+	width: 600px;
+}
+
+.iovModal.big .modal-input .modal-column {
+	width: 50%;
+}
+
+.iovModal.huge .drag {
+	left: calc(50% - 400px);
+	width: 800px;
+}
+
+.iovModal.huge .modal-input .modal-column {
+	width: 50%;
+}
+
+.modal-open .iovModal.modal {
+	overflow: hidden;
+}
+.iovModal.fixed .modal-content{
+	height:100%
+}
+.iovModal.fixed .drag{
+	width:1000px;
+	position: absolute;
+	top:40px;
+	bottom:40px;
+	left:10%;
+	left:calc(50% - 500px);
+	margin:0;
+}
+
+.iovModal.fixed .modal-content  .modal-body{
+	position:absolute;
+	top:40px;
+	bottom:0;
+	width:100%;
+}
+.iovModal.fixed .modal-content  .modal-body .modal-bodyMain{
+	position:absolute;
+	top:0;
+	bottom:70px;
+	left:0;
+	width:100%;
+	padding:20px 25px;
+	background-color:#F2F0F0;
+}
+.iovModal.fixed .modal-content  .modal-body .modal-submit{
+	position:absolute;	
+	bottom:0;
+	left:0;
+}
+button.iovFormButton {
+	font-size: 12px;
+	padding: 8px 50px;
+	border: none;
+	position: relative;
+}
+
+button.iovFormButton.btn:focus,
+button.iovFormButton.btn:hover {
+	color: #FFF;
+	outline: none
+}
+
+.iovoption {
+	height: 34px;
+	width: 100%;
+	border: solid 1px #3c763d;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding: 0 14px 0 12px;
+	cursor: pointer;
+	background: url("img/arrow.png") no-repeat scroll right center transparent;
+}
+
+.iovoption:focus {
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+
+.iovoption[disabled] {
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
+.has-error .iovoption {
+	border-color: #a94442
+}
+
+.has-error .iovoption:focus {
+	border-color: #843534;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.has-success .iovoption {
+	border-color: #3c763d
+}
+
+.has-success .iovoption:focus {
+	border-color: #2b542c;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+
+.bootstrap-select.iovselect>.dropdown-toggle {
+	border-radius: 0;
+}
+
+.has-success .bootstrap-select.iovselect>.dropdown-toggle {
+	border-color: #a94442
+}
+
+.has-success .bootstrap-select.iovselect>.dropdown-toggle:active {
+	border-color: #843534;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.has-success .bootstrap-select.iovselect>.dropdown-toggle {
+	border-color: #3c763d;
+}
+
+.has-success .bootstrap-select.iovselect>.dropdown-toggle:active {
+	border-color: #2b542c;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+
+.has-feedback .form-control[disabled] {
+	border: 1px solid rgb(125, 163, 126)
+}
+contentTable table tbody tr td:first-of-type input[type="checkbox"]{
+	float:left;
+	position:relative;
+	top:1px;
+	left:12px;
+}
+.contentTable table thead tr th:first-of-type input[type="checkbox"]{
+	float:left;
+	position:relative;
+	top:1px;
+	left:12px;
+	margin-right:10px;
+}
+.contentTable table thead th,.contentTable table tbody td{
+	text-align: center;
+}
+.contentTable table tbody{
+	color:#959595;
+}
+.contentTable .table{
+	margin-bottom:0;
+}
+.contentTable .table > thead > tr > th,.contentTable .table > tbody > tr > th,.contentTable .table > tfoot > tr > th,.contentTable .table > thead > tr > td,.contentTable .table > tbody > tr > td,.contentTable .table > tfoot > tr > td{
+	padding:12px 8px;
+}
+.contentTable .table-striped > tbody > tr:nth-of-type(2n+1){
+	background-color:#F8F8F8 ;
+}
+.contentTable .table tbody tr{
+	height:45px
+}
+.contentTable .table-bordered > thead > tr > th,.contentTable .table-bordered > tbody > tr > th,.contentTable .table-bordered > tfoot > tr > th,.contentTable .table-bordered > thead > tr > td,.contentTable .table-bordered > tbody > tr > td,.contentTable .table-bordered > tfoot > tr > td{
+	border:1px #e9e9e9 solid;
+}
+.contentTable .table-bordered > thead > tr > th,.contentTable .table-bordered > tbody > tr > td{
+	border:none;
+}
+.contentTable thead > tr > th,.contentTable tbody > tr > td{
+	vertical-align: middle;
+}
+.contentTable .table-bordered > thead > tr > th:first-of-type{
+	width:100px;
+	height: 45px;
+}
+.contentTable .table-bordered > thead > tr > th:last-of-type{
+	width:100px;
+}
+.contentTable .table-bordered > thead > tr > th:last-of-type.noOperator{
+	width:auto;
+}
+.table > tbody > tr > td.pointer span{
+	cursor:pointer;
+	margin-right:20px;
+	font-size:16px;
+}
+.table > tbody > tr > td.pointer .btn-group{
+	margin-top:-12px;
+	margin-left:-17px;
+	position: absolute;
+}
+.table > tbody > tr > td.pointer .btn-group button{
+	padding:0 10px;
+}
+.table > tbody > tr > td.pointer .dropdown-menu{
+	min-width: auto;
+	right:-37px;
+	left:auto;
+}
+.table > tbody > tr > td.pointer .dropdown-menu li{
+	cursor:pointer
+}
+.table > tbody > tr > td.pointer .dropdown-menu a{
+	min-width: auto;
+	padding:3px 15px;
+}
+.table > tbody > tr > td.pointer :before{
+	margin-right:7px;
+	width:15px;
+	text-align: center;
+}
+.iovModal .modal-header,
+header.iovTitle {
+	background-color: rgb(48, 175, 174);
+	color: #FFF
+}
+
+button.iovFormButton {
+	color: #FFF;
+	background-color: #C1C3C3;
+}
+
+button.iovFormButton:hover {
+	color: #FFF;
+	background-color: #AAA;
+}
+
+button.iovFormButton[disabled]:hover,
+button.iovFormButton.disabled:hover {
+	color: #FFF;
+	background-color: #C1C3C3;
+	opacity: 0.65;
+}
+
+
+/*确定*/
+
+button.iovFormButton.confirm {
+	background-color: rgb(48, 175, 174);
+}
+
+button.iovFormButton.confirm:hover {
+	background-color: #58C2B2;
+}
+
+button.iovFormButton[disabled]:hover,
+button.iovFormButton.disabled:hover {
+	background-color: rgb(48, 175, 174);
+}
+button.iovFormButton.reset {
+	background-color: #71B9CD;
+}
+
+button.iovFormButton.reset:hover {
+	background-color: deepskyblue;
+}
+.lbl {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 44px;
+  background: #E3E3E3;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border:1px #ccc solid;
+  margin:4px auto;
+}
+.lbl:after {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+  content: '';
+  transition: all 0.3s ease;
+  border:1px #ccc solid;
+}
+.lbl:active:after {
+  transform: scale(1.15, 0.85);
+}
+.cbx:checked ~ label.green {
+  background: #2CAF80;
+}
+.cbx:checked ~ label.blue {
+  background: #57C1D5;
+}
+.cbx:checked ~ label:after {
+  left: 25px;
+}
+.cbx:disabled ~ label {
+  background: #d5d5d5;
+  pointer-events: none;
+}
+.cbx:disabled ~ label:after {
+  background: #bcbdbc;
+}
+.cntr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.press {
+  margin-bottom: 40px;
+}
+.cbx {
+  display: none;
+}
+.contentTool ul li {
+	display: block;
+	float: left;
+	height: 100%;
+	margin-right: 20px;
+}
+span.iovButton, ul.iovButtonGroup > li > span {
+	display: inline-block;
+	padding: 6px 20px;
+	border-radius: 3px;
+	font: 400 16px "microsoft yahei";
+	cursor: pointer;
+	position: relative;
+}
+.iovModal.property .contentMain .contentTool .iovButtonGroup li > span {
+	background-color: #6BC3DB;
+	font-size: 14px;
+	color: #FFF;
+	letter-spacing: 1px;
+	margin-left: 60px;
+}
+#relevance .tableContent{
+	width:50%;
+	height: calc(100% - 70px);
+	position: relative;
+	background-color: #F2F0F0;
+}
+.databaseERHeader{
+	padding:0 35px 0 15px;
+	border-radius: 6px 6px 0 0;
+	background-color:rgb(48,175,174);
+	color:#FFF
+}
+#relevance .tableContent.from{
+	float: left;
+}
+#relevance .tableContent.to{
+	float: right;
+}
+#relevance .tableContent .tableMain{
+	position: absolute;
+    top: 40px;
+    left: 40px;
+    bottom: 40px;
+    right: 40px;
+    border:1px solid #F2F0F0;
+    background-color: #FFFFFF;
+}
+#relevance .tableContent .tableMain .tableHead{
+    width:100%;
+    height:50px;
+    font:bold 20px "simsun";
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    background-color: #75BCDD;
+}
+#relevance .tableContent .tableMain .tableBody{
+	padding:15px 0 15px 30px;
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	width: 100%;
+}
+#relevance .tableContent .tableMain .tableBody ul{
+	height:100%;
+	width:100%;
+}
+#relevance .tableContent .tableMain .tableBody ul li{
+    width:100%;
+    padding:5px 0;
+    font-size:16px;
+}
+#relevance .tableContent .tableMain .tableBody ul li span{
+	color:rgb(153,153,153);margin-left:7px
+}
+.iovModal#create .modal-input .modal-column,.iovModal#import .modal-input .modal-column{
+	width:100%
+}
+.iovModal.property .contentMain .contentTable{
+	position:absolute;
+	top:75px;
+	bottom:113px;
+	width:100%;
+}
+.iovModal.property#propertyCheck .contentMain .contentTable{
+	top:0px;
+}
+.iovModal.property .modal-submit{
+	padding:40px 55px;
+	height:auto;
+	position: absolute;
+	bottom:0;
+}
+.iovModal.property .modal-submit button{
+	margin-left:40px;
+}
+.iovModal.property .contentMain{
+	position: static;
+	padding:0;
+}
+.iovModal.property .contentMain .contentTool{
+	height:75px;
+	padding:20px 25px;	
+}
+.iovModal.property .contentMain .contentTool .iovButtonGroup li>span{
+	background-color:#6BC3DB ;
+	font-size:14px;
+	color:#FFF;
+	letter-spacing:1px ;
+	margin-left:60px	
+}
+.iovModal.property .contentMain .contentTool .iovButtonGroup>div{
+	float:left
+}
+.iovModal.property .contentMain .contentTool .iovButtonGroup>div label{
+	float:left;
+	margin: 7px 15px;
+}
+.iovModal.property .contentMain .contentTool .iovButtonGroup>div input{
+	float:left;
+	width: auto;
+}
+.iovModal.property .contentMain table{
+	background-color:#F5F7F7 ;
+}
+.iovModal.property .contentTable table thead{
+	background-color:inherit;
+	color:#000 
+}
+.iovModal.property .contentTable .table > thead > tr > th{
+	border:none;
+}
+.iovModal.property .contentTable table tbody tr{
+	border-top:1px #E6E8E7 solid;
+}
+.iovModal.property .contentMain tbody tr td input,.iovModal.property .contentMain tbody tr td select{
+	height:30px;
+	border:2px #c9c9c9 solid;
+	padding:0 12px;
+}
+.iovModal.property .contentMain tbody tr td input:focus,.iovModal.property .contentMain tbody tr td select:focus{
+	border-color: #66afe9;
+    outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+} 
+.iovModal.property .contentMain thead tr th:nth-of-type(1){
+	width:70px;
+}
+.iovModal.property .contentMain thead tr th:nth-of-type(4){
+	width:142px;
+}
+.iovModal.property .contentMain thead tr th:nth-of-type(5){
+	width:100px;
+}
+.iovModal.property .contentMain thead tr th:nth-of-type(6){
+	width:70px;
+}
+.iovModal.property .contentMain thead tr th:nth-of-type(7){
+	width:100px;
+}
+.iovModal.property .contentMain thead tr th:nth-of-type(8){
+	width:100px;
+}
+.iovModal.property .contentMain thead tr th:nth-of-type(9){
+	width:70px;
+} 
+.iovModal.property .contentMain tbody tr td:nth-of-type(1){
+	font:400 14px "microsoft yahei";
+	line-height:30px;
+	vertical-align:middle ;
+}
+
+.iovModal.property .contentMain tbody tr td:nth-of-type(9)>span{
+	cursor:pointer;
+	font-size:18px;
+	vertical-align:middle;
+	margin-bottom:5px
+} 
+.iovModal.property .form-group{
+	margin-bottom:0;
+}
+
+
+
+
+html,
+body,
+.content {
+	height: 100%;
+	width: 100%;
+}
+.check{
+	position: fixed;
+	top:20px;
+	right:40px;
+}
+#checkData.iovModal.fixed .drag{
+	width: 800px;
+	left:calc(50% - 400px)
+}
+#checkData textarea{
+	width:100%;
+	height: 100%;
+	padding:20px 50px
+}
